@@ -1,0 +1,32 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using TMPro;
+using UnityEngine.UI;
+
+public class PermaUIScript : MonoBehaviour
+{
+    public int gems = 0;
+    public TextMeshProUGUI gemAmount;
+
+    public static PermaUIScript perm;
+
+    public void Start()
+    {
+        if(!perm)
+        {
+            perm = this;
+        }
+
+        else
+        {
+            Destroy(gameObject);
+        }
+    }
+
+    public void Reset()
+    {
+        gems = 0;
+        gemAmount.text = gemAmount.ToString();
+    }
+}
