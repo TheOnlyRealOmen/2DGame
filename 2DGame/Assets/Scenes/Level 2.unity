@@ -29901,6 +29901,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1960923889, guid: 2516ef64bada39f4599de0b2546f1d82, type: 3}
+      propertyPath: GameOverScene
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 8824148668200234473, guid: 2516ef64bada39f4599de0b2546f1d82,
         type: 3}
       propertyPath: m_Name

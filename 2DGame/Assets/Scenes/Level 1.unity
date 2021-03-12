@@ -5934,25 +5934,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 3556783195035121607}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1960923888 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8824148668200234473, guid: 2516ef64bada39f4599de0b2546f1d82,
-    type: 3}
-  m_PrefabInstance: {fileID: 8824148667904624360}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1960923889
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1960923888}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3f4454181049cdd47826f67b93caa49d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  GameOverScene: 
 --- !u!1 &1997971840
 GameObject:
   m_ObjectHideFlags: 0
@@ -34219,6 +34200,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 6076248380009980361, guid: 3a8df5ce74cc01a42aaf2731a2ae2521,
+        type: 3}
+      propertyPath: sceneName
+      value: Level 2
+      objectReference: {fileID: 0}
     - target: {fileID: 6634939044132853265, guid: 3a8df5ce74cc01a42aaf2731a2ae2521,
         type: 3}
       propertyPath: m_Name
