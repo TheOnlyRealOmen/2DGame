@@ -101,7 +101,7 @@ Rigidbody2D:
   m_Mass: 1.6105303
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 2.5
+  m_GravityScale: 3.5
   m_Material: {fileID: 6200000, guid: 7d822cbda3f1cb04992eb9cf10cd75f9, type: 2}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -123,10 +123,8 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 256
   speed: 6.5
-  jumpForce: 13
-  glideSpeed: -2
-  gems: 0
-  gemText: {fileID: 0}
+  jumpForce: 15.5
+  glideSpeed: -2.5
   hurtForce: 8
 --- !u!95 &3630923419363852946
 Animator:

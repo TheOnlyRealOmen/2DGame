@@ -12,6 +12,7 @@ public class PlayerController : MonoBehaviour
     private Collider2D coll;
     private bool TouchingGround = false;
     private AudioSource footsteps;
+    private bool DoubleJump = false;
 
     //FSM
     private enum State {idle, running, jumping, falling, hurt}

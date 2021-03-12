@@ -33750,11 +33750,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
-    - target: {fileID: 3630923419363852956, guid: 49140b3d593db294ab7a6d88e470274f,
-        type: 3}
-      propertyPath: gemText
-      value: 
-      objectReference: {fileID: 0}
     - target: {fileID: 3630923419375931188, guid: 49140b3d593db294ab7a6d88e470274f,
         type: 3}
       propertyPath: m_RootOrder
