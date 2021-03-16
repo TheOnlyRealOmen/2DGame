@@ -12,7 +12,6 @@ public class PlayerController : MonoBehaviour
     private Collider2D coll;
     private bool TouchingGround = false;
     private AudioSource footsteps;
-    private bool DoubleJump = false;
 
     //FSM
     private enum State {idle, running, jumping, falling, hurt}
@@ -59,17 +58,27 @@ public class PlayerController : MonoBehaviour
     {
         //GemScript
         Gem(collision);
+
+        Heart(collision);
     }
 
     private void OnCollisionEnter2D(Collision2D other)
     {
         Enemy(other);
-
     }
 
 
+    private void Heart(Collider2D collision)
+    {
+         if (collision.tag == "Heart")
+         {
+             HeartScript heart = collision.gameObject.GetComponent<HeartScript>();
+             heart.Collected();
+         }
+    }
+            
 
-    private void Gem(Collider2D collision)
+        private void Gem(Collider2D collision)
     {
         
         
