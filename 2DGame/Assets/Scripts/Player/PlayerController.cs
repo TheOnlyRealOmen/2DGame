@@ -72,13 +72,15 @@ public class PlayerController : MonoBehaviour
     {
          if (collision.tag == "Heart")
          {
-             HeartScript heart = collision.gameObject.GetComponent<HeartScript>();
-             heart.Collected();
+            HeartScript heart = collision.gameObject.GetComponent<HeartScript>();
+            heart.Collected();
+            PermaUIScript.perm.hearts += 1;
+            PermaUIScript.perm.heartAmount.text = PermaUIScript.perm.hearts.ToString();
          }
     }
             
 
-        private void Gem(Collider2D collision)
+    private void Gem(Collider2D collision)
     {
         
         
@@ -105,10 +107,13 @@ public class PlayerController : MonoBehaviour
                 
             }
 
-            //Knockback
+            //Damage
             else
             {
                 state = State.hurt;
+                PermaUIScript.perm.hearts -= 1;
+                PermaUIScript.perm.heartAmount.text = PermaUIScript.perm.hearts.ToString();
+
                 if (other.gameObject.transform.position.x < transform.position.x)
                 {
                     rb.velocity = new Vector2(hurtForce, rb.velocity.y);
