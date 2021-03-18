@@ -59,6 +59,7 @@ public class PlayerController : MonoBehaviour
         //GemScript
         Gem(collision);
 
+        //HeartScipt
         Heart(collision);
     }
 
@@ -74,8 +75,11 @@ public class PlayerController : MonoBehaviour
          {
             HeartScript heart = collision.gameObject.GetComponent<HeartScript>();
             heart.Collected();
-            PermaUIScript.perm.hearts += 1;
-            PermaUIScript.perm.heartAmount.text = PermaUIScript.perm.hearts.ToString();
+
+            if (PermaUIScript.perm.hearts < 4)
+            {
+                PermaUIScript.perm.hearts += 1;
+            }
          }
     }
             
@@ -111,8 +115,11 @@ public class PlayerController : MonoBehaviour
             else
             {
                 state = State.hurt;
-                PermaUIScript.perm.hearts -= 1;
-                PermaUIScript.perm.heartAmount.text = PermaUIScript.perm.hearts.ToString();
+
+                if (PermaUIScript.perm.hearts > 1)
+                {
+                    PermaUIScript.perm.hearts -= 1;
+                }
 
                 if (other.gameObject.transform.position.x < transform.position.x)
                 {

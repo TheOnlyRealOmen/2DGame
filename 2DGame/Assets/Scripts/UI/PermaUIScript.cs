@@ -9,7 +9,6 @@ public class PermaUIScript : MonoBehaviour
     public int gems = 0;
     public int hearts = 5;
     public TextMeshProUGUI gemAmount;
-    public TextMeshProUGUI heartAmount;
 
     public static PermaUIScript perm;
 
@@ -31,6 +30,5 @@ public class PermaUIScript : MonoBehaviour
         gems = 0;
         gemAmount.text = gemAmount.ToString();
         hearts = 4;
-        heartAmount.text = heartAmount.ToString();
     }
 }
